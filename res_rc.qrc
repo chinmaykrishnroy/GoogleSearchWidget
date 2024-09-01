@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>cil-equalizer.png</file>
+    <file>cil-lightbulb.png</file>
+    <file>cil-lock-locked.png</file>
+    <file>cil-lock-unlocked.png</file>
+    <file>cil-low-vision.png</file>
+    <file>cil-magnifying-glass.png</file>
+    <file>cil-microphone.png</file>
+    <file>cil-moon.png</file>
+    <file>cil-x.png</file>
+    <file>icon_settings.png</file>
+  </qresource>
+</RCC>
