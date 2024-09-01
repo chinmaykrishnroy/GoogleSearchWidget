@@ -17,8 +17,8 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(250, 275)
-        MainWindow.setMaximumSize(QSize(300, 425))
+        MainWindow.resize(250, 250)
+        MainWindow.setMaximumSize(QSize(275, 325))
         MainWindow.setWindowOpacity(0.6)
         MainWindow.setStyleSheet(styles)
         self.centerwidget = QWidget(MainWindow)
@@ -87,12 +87,12 @@ class Ui_MainWindow(object):
             u"scrollAreaWidgetContents")
         self.scrollAreaWidgetContents.setGeometry(QRect(0, -37, 246, 270))
         self.verticalLayout_3 = QVBoxLayout(self.scrollAreaWidgetContents)
-        self.verticalLayout_3.setSpacing(6)
+        self.verticalLayout_3.setSpacing(3)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
         self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.opacityFrame = QFrame(self.scrollAreaWidgetContents)
         self.opacityFrame.setObjectName(u"opacityFrame")
-        self.opacityFrame.setMinimumSize(QSize(0, 40))
+        self.opacityFrame.setMinimumSize(QSize(0, 28))
         self.opacityFrame.setFrameShape(QFrame.Shape.StyledPanel)
         self.opacityFrame.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout = QHBoxLayout(self.opacityFrame)
@@ -107,7 +107,7 @@ class Ui_MainWindow(object):
 
         self.opacityComboBox = QComboBox(self.opacityFrame)
         self.opacityComboBox.setObjectName(u"opacityComboBox")
-        self.opacityComboBox.setMaximumSize(QSize(84, 16777215))
+        self.opacityComboBox.setMaximumSize(QSize(84, 24))
         self.opacityComboBox.addItems([str(i) for i in range(1, 11)])
         self.opacityComboBox.setCurrentIndex(5)
         self.horizontalLayout.addWidget(self.opacityComboBox)
@@ -116,7 +116,7 @@ class Ui_MainWindow(object):
 
         self.maxSuggestionFrame = QFrame(self.scrollAreaWidgetContents)
         self.maxSuggestionFrame.setObjectName(u"maxSuggestionFrame")
-        self.maxSuggestionFrame.setMinimumSize(QSize(0, 40))
+        self.maxSuggestionFrame.setMinimumSize(QSize(0, 28))
         self.maxSuggestionFrame.setFrameShape(QFrame.Shape.StyledPanel)
         self.maxSuggestionFrame.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_3 = QHBoxLayout(self.maxSuggestionFrame)
@@ -141,7 +141,7 @@ class Ui_MainWindow(object):
         self.maxSuggestionComboBox.addItem("")
         self.maxSuggestionComboBox.addItem("")
         self.maxSuggestionComboBox.setObjectName(u"maxSuggestionComboBox")
-        self.maxSuggestionComboBox.setMaximumSize(QSize(84, 16777215))
+        self.maxSuggestionComboBox.setMaximumSize(QSize(84, 24))
         self.maxSuggestionComboBox.setCurrentIndex(4)
 
         self.horizontalLayout_3.addWidget(self.maxSuggestionComboBox)
@@ -150,7 +150,7 @@ class Ui_MainWindow(object):
 
         self.languageFrame = QFrame(self.scrollAreaWidgetContents)
         self.languageFrame.setObjectName(u"languageFrame")
-        self.languageFrame.setMinimumSize(QSize(0, 40))
+        self.languageFrame.setMinimumSize(QSize(0, 28))
         self.languageFrame.setFrameShape(QFrame.Shape.StyledPanel)
         self.languageFrame.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_4 = QHBoxLayout(self.languageFrame)
@@ -165,7 +165,7 @@ class Ui_MainWindow(object):
 
         self.languageComboBox = QComboBox(self.languageFrame)
         self.languageComboBox.setObjectName(u"languageComboBox")
-        self.languageComboBox.setMaximumSize(QSize(84, 16777215))
+        self.languageComboBox.setMaximumSize(QSize(84, 24))
         self.languageComboBox.addItems([
             'English (en)',
             'Spanish (es)',
@@ -192,7 +192,7 @@ class Ui_MainWindow(object):
 
         self.clienTypeFrame = QFrame(self.scrollAreaWidgetContents)
         self.clienTypeFrame.setObjectName(u"clienTypeFrame")
-        self.clienTypeFrame.setMinimumSize(QSize(0, 40))
+        self.clienTypeFrame.setMinimumSize(QSize(0, 28))
         self.clienTypeFrame.setFrameShape(QFrame.Shape.StyledPanel)
         self.clienTypeFrame.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_5 = QHBoxLayout(self.clienTypeFrame)
@@ -207,7 +207,7 @@ class Ui_MainWindow(object):
 
         self.clientTypeComboBox = QComboBox(self.clienTypeFrame)
         self.clientTypeComboBox.setObjectName(u"clientTypeComboBox")
-        self.clientTypeComboBox.setMaximumSize(QSize(84, 16777215))
+        self.clientTypeComboBox.setMaximumSize(QSize(84, 24))
         self.clientTypeComboBox.addItems([
             'firefox',
             'chrome',
@@ -228,7 +228,7 @@ class Ui_MainWindow(object):
 
         self.regionFrame = QFrame(self.scrollAreaWidgetContents)
         self.regionFrame.setObjectName(u"regionFrame")
-        self.regionFrame.setMinimumSize(QSize(0, 40))
+        self.regionFrame.setMinimumSize(QSize(0, 28))
         self.regionFrame.setFrameShape(QFrame.Shape.StyledPanel)
         self.regionFrame.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_6 = QHBoxLayout(self.regionFrame)
@@ -243,7 +243,7 @@ class Ui_MainWindow(object):
 
         self.regionComboBox = QComboBox(self.regionFrame)
         self.regionComboBox.setObjectName(u"regionComboBox")
-        self.regionComboBox.setMaximumSize(QSize(84, 16777215))
+        self.regionComboBox.setMaximumSize(QSize(84, 24))
         self.regionComboBox.addItems([
             'United States (region=US)',
             'United Kingdom (region=GB)',
@@ -270,7 +270,7 @@ class Ui_MainWindow(object):
 
         self.autoVoiceSearch = QFrame(self.scrollAreaWidgetContents)
         self.autoVoiceSearch.setObjectName(u"autoVoiceSearch")
-        self.autoVoiceSearch.setMinimumSize(QSize(0, 40))
+        self.autoVoiceSearch.setMinimumSize(QSize(0, 28))
         self.autoVoiceSearch.setFrameShape(QFrame.Shape.StyledPanel)
         self.autoVoiceSearch.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_7 = QHBoxLayout(self.autoVoiceSearch)
@@ -287,7 +287,7 @@ class Ui_MainWindow(object):
         self.autoVoiceSearchBomboBox.addItem("")
         self.autoVoiceSearchBomboBox.addItem("")
         self.autoVoiceSearchBomboBox.setObjectName(u"autoVoiceSearchBomboBox")
-        self.autoVoiceSearchBomboBox.setMaximumSize(QSize(84, 16777215))
+        self.autoVoiceSearchBomboBox.setMaximumSize(QSize(84, 24))
         self.autoVoiceSearchBomboBox.setCurrentIndex(1)
 
         self.horizontalLayout_7.addWidget(self.autoVoiceSearchBomboBox)

@@ -12,6 +12,10 @@ styles = """
     background: transparent;
 }
 
+#centerwidget {
+    background: transparent;
+}
+
 #searchArea {
     background: transparent;
 }
@@ -84,7 +88,7 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #searchBtn:pressed {
-	background-color: #000000;
+	background-color: #444444;
 	border-right: 1px solid #779300;
 	border-top: 1px solid #779300;
 	border-bottom: 1px solid #779300;
@@ -142,13 +146,13 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #scrollAreaWidgetContents QFrame {
-	background-color: #a7b308;
+	background-color: #3A606E;
 	border-radius: 4px;
 }
 
 #scrollAreaWidgetContents QPushButton {
-	background-color: #a7b308;
-	color: #000000;
+	background-color: #3A606E;
+	color: #ffffff;
 	padding: 2px 4px;
 }
 
@@ -162,6 +166,7 @@ QScrollBar::add-line, QScrollBar::sub-line {
 #headerWidget QLabel {
 	padding: 2px 4px;
 	font-size: 20px;
+    border-radius: 6px;
 	color: #dddddd;
 }
 
@@ -183,7 +188,18 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #headerWidget {
-	border-radius: 12px;
+	border-radius: 6px;
+	background: #111111;
+}
+
+#settingWidgets {
+	border-radius: 6px;
+	background: #111111;
+}
+
+#scrollAreaWidgetContents {
+	border-radius: 6px;
+	background: #111111;
 }
 
 #scrollAreaWidgetContents QComboBox {
@@ -191,8 +207,8 @@ QScrollBar::add-line, QScrollBar::sub-line {
     color: #000000;
 	background: #dddddd;
 	font-family: "Segoe UI";
-	font-size: 16px;
-	border: 4px solid #dddddd; 
+	font-size: 12px;
+	border: 2px solid #dddddd; 
 	border-radius: 6px;
 }
 

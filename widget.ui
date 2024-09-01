@@ -326,8 +326,8 @@ QWidget {
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../BitroidDM/UI/res.qrc">
-           <normaloff>:/icons/icons/search.svg</normaloff>:/icons/icons/search.svg</iconset>
+          <iconset resource="res_rc.qrc">
+           <normaloff>:/icons/cil-microphone.png</normaloff>:/icons/cil-microphone.png</iconset>
          </property>
          <property name="iconSize">
           <size>
