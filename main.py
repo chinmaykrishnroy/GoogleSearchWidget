@@ -114,10 +114,17 @@ class MainWindow(QMainWindow):
         self.settings_window.hide()
 
     def start_voice_search(self):
-        self.ui.searchBtn.setEnabled(False)
-        self.voice_thread = VoiceSearchThread(self.ui)
-        self.voice_thread.voice_recognized.connect(self.on_voice_recognized)
-        self.voice_thread.start()
+        try:
+            self.ui.searchBtn.setEnabled(False)
+            self.voice_thread = VoiceSearchThread(self.ui)
+            self.voice_thread.voice_recognized.connect(
+                self.on_voice_recognized)
+            self.voice_thread.start()
+        except Exception as e:
+            self.ui.searchBtn.setEnabled(True)
+            self.ui.searchInputText.setPlaceholderText(
+                u"Errors in Voice Search!")
+            self.placeholder_timer.start(2000)
 
     def on_voice_recognized(self, query):
         self.ui.searchBtn.setEnabled(True)
