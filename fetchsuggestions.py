@@ -15,11 +15,7 @@ class FetchSuggestionsThread(QThread):
 
     def run(self):
         try:
-            url = (
-                f"https://suggestqueries.google.com/complete/search"
-                f"?client={self.client_type}&hl={self.language}&gl={
-                    self.region}&q={requests.utils.quote(self.query)}"
-            )
+            url = (f"https://suggestqueries.google.com/complete/search?client={self.client_type}&hl={self.language}&gl={self.region}&q={requests.utils.quote(self.query)}")
             # print(f"Fetching suggestions from URL: {url}")
 
             response = requests.get(url)
