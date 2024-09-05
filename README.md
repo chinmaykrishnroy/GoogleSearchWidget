@@ -42,8 +42,8 @@ This widget is perfect for users who want a lightweight, always-on-bottom search
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/chinmaykrishnroy/GoogleSearchWidget](https://github.com/chinmaykrishnroy/GoogleSearchWidget).git
-   cd google-search-widget
+   git clone https://github.com/chinmaykrishnroy/GoogleSearchWidget.git
+   cd GoogleSearchWidget
 
 2. Run the script:
 
