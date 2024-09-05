@@ -16,7 +16,7 @@ The Google Search Widget allows you to perform Google searches directly from you
 
 ## Use Case
 
-This widget is perfect for users who want a lightweight, always-on-top search bar for quick searches on Google. The voice search feature makes it particularly useful for those who prefer hands-free operation, and the customizable UI can adapt to different work environments.
+This widget is perfect for users who want a lightweight, always-on-bottom search bar for quick searches on Google. The voice search feature makes it particularly useful for those who prefer hands-free operation, and the customizable UI can adapt to different work environments.
 
 ### Example Use Cases:
 - Quickly perform searches while multitasking without opening a full web browser.
@@ -60,11 +60,8 @@ The widget offers several customization options to improve user experience and a
 - **Search Suggestion Count**:
   - You can set the maximum number of search suggestions to be displayed when typing in the search bar. The default is set to 5 but can be customized to any number based on user preference.
 
-- **Custom Styling**: 
-  - The widget’s appearance, including font style, color scheme, and button sizes, can be adjusted via the settings menu. These settings ensure the widget fits well with your overall desktop theme.
-
 - **Positioning**:
-  - The widget can be freely dragged and placed anywhere on your screen. The position is stored and maintained even after restarting your system.
+  - The widget can be freely dragged and placed anywhere on your screen. The settings state is stored and maintained even after closing the app or restarting the system.
 
 ---
 
