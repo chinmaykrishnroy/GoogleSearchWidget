@@ -108,6 +108,7 @@ class MainWindow(QMainWindow):
             self.main_url = f"{self.base_url}?{query_string}"
         else:
             self.main_url = self.base_url
+        self.saveState()
         # print(f"Updated URL: {self.main_url}")
 
     def show_settings_window(self):
@@ -147,7 +148,7 @@ class MainWindow(QMainWindow):
         sys.exit()
 
     def onTextChanged(self):
-        self.debounce_timer.start(50)
+        self.debounce_timer.start(40)
         self.clear_focus()
 
     def fetchSuggestions(self):
