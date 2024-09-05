@@ -42,7 +42,7 @@ This widget is perfect for users who want a lightweight, always-on-bottom search
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/google-search-widget.git
+   git clone [https://github.com/chinmaykrishnroy/GoogleSearchWidget](https://github.com/chinmaykrishnroy/GoogleSearchWidget).git
    cd google-search-widget
 
 2. Run the script:
