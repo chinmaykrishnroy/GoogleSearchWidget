@@ -4,6 +4,7 @@ from fetchsuggestions import *
 from setting import Ui_MainWindow as Ui_SettingsWindow
 import webbrowser
 import sys
+import json
 
 
 class MainWindow(QMainWindow):
@@ -27,6 +28,7 @@ class MainWindow(QMainWindow):
         current_flags = self.windowFlags()
         self.setWindowFlags(current_flags | Qt.Tool |
                             Qt.WindowStaysOnBottomHint)
+        self.loadState()
         self.show()
         self.ui.closeBtn.clicked.connect(self.exitWidget)
         self.ui.searchBtn.clicked.connect(self.start_voice_search)
@@ -40,8 +42,6 @@ class MainWindow(QMainWindow):
         self.resize_position = None
         self.drag_position = None
 
-        self.max_suggestion = 5
-        self.autoredirect = False
         self.suggestion_buttons = []
         self.current_thread = None
         self.focused_suggestion_index = -1
@@ -73,14 +73,17 @@ class MainWindow(QMainWindow):
 
     def enable_voicesearch_redirects(self):
         self.autoredirect = True if not self.settings_ui.autoVoiceSearchBomboBox.currentIndex() else False
+        self.saveState()
 
     def parse_opacity(self):
         opacity = int(self.settings_ui.opacityComboBox.currentText())/10
         self.setWindowOpacity(opacity)
+        self.saveState()
 
     def set_max_suggestions(self):
         self.max_suggestion = int(
             self.settings_ui.maxSuggestionComboBox.currentText())
+        self.saveState()
 
     def update_url(self):
         language_text = self.settings_ui.languageComboBox.currentText()
@@ -139,6 +142,7 @@ class MainWindow(QMainWindow):
             self.voice_thread.wait()
 
     def exitWidget(self):
+        self.saveState()
         self.close()
         sys.exit()
 
@@ -316,6 +320,66 @@ class MainWindow(QMainWindow):
         self.settings_window.resizing = False
         self.settings_window.dragging = False
         self.settings_window.unsetCursor()
+
+    def saveState(self):
+        state = {
+            'opacity': self.settings_ui.opacityComboBox.currentIndex(),
+            'suggestion_count': self.settings_ui.maxSuggestionComboBox.currentIndex(),
+            'language': self.settings_ui.languageComboBox.currentIndex(),
+            'client_type': self.settings_ui.clientTypeComboBox.currentIndex(),
+            'region': self.settings_ui.regionComboBox.currentIndex(),
+            'autoredirect': self.settings_ui.autoVoiceSearchBomboBox.currentIndex(),
+            'theme': 0,
+        }
+        with open('.state.json', 'w') as f:
+            json.dump(state, f)
+
+    def loadState(self):
+        default_opacity_index = 5
+        default_suggestion_index = 4
+        default_language_index = 0
+        default_client_type_index = 1
+        default_region_index = 4
+        autoredirect_index = 0
+        default_theme_index = 0
+        try:
+            with open('.state.json', 'r') as f:
+                state = json.load(f)
+                self.default_opacity_index = state.get(
+                    'opacity', default_opacity_index)
+                self.max_suggestion_index = state.get(
+                    'suggestion_count', default_suggestion_index)
+                self.language_index = state.get(
+                    'language', default_language_index)
+                self.client_type_index = state.get(
+                    'client_type', default_client_type_index)
+                self.region_index = state.get('region', default_region_index)
+                self.autoredirect_index = state.get(
+                    'autoredirect', autoredirect_index)
+                self.default_theme_index = state.get(
+                    'theme', default_theme_index)
+        except FileNotFoundError:
+            self.default_opacity_index = default_opacity_index
+            self.max_suggestion_index = default_suggestion_index
+            self.language_index = default_language_index
+            self.client_type_index = default_client_type_index
+            self.region_index = default_region_index
+            self.autoredirect_index = autoredirect_index
+            self.default_theme_index = default_theme_index
+
+        self.settings_ui.maxSuggestionComboBox.setCurrentIndex(
+            self.max_suggestion_index)
+        self.settings_ui.opacityComboBox.setCurrentIndex(
+            self.default_opacity_index)
+        self.settings_ui.languageComboBox.setCurrentIndex(self.language_index)
+        self.settings_ui.clientTypeComboBox.setCurrentIndex(
+            self.client_type_index)
+        self.settings_ui.regionComboBox.setCurrentIndex(self.region_index)
+        self.settings_ui.autoVoiceSearchBomboBox.setCurrentIndex(
+            self.autoredirect_index)
+        self.enable_voicesearch_redirects()
+        self.parse_opacity()
+        self.set_max_suggestions()
 
 
 if __name__ == "__main__":

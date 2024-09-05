@@ -19,7 +19,7 @@ class Ui_MainWindow(object):
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(250, 250)
         MainWindow.setMaximumSize(QSize(275, 325))
-        MainWindow.setWindowOpacity(0.6)
+        MainWindow.setWindowOpacity(0.9)
         MainWindow.setStyleSheet(styles)
         self.centerwidget = QWidget(MainWindow)
         self.centerwidget.setObjectName(u"centerwidget")
@@ -346,7 +346,7 @@ class Ui_MainWindow(object):
         self.regionBtn.setText(QCoreApplication.translate(
             "MainWindow", u"Region", None))
         self.autoVoiceSearchBtn.setText(QCoreApplication.translate(
-            "MainWindow", u"Auto Voice Search", None))
+            "MainWindow", u"Voice Redirect", None))
         self.autoVoiceSearchBomboBox.setItemText(
             0, QCoreApplication.translate("MainWindow", u"Yes", None))
         self.autoVoiceSearchBomboBox.setItemText(
