@@ -20,7 +20,7 @@ class Ui_MainWindow(object):
         MainWindow.resize(250, 250)
         MainWindow.setMaximumSize(QSize(275, 325))
         MainWindow.setWindowOpacity(0.9)
-        MainWindow.setStyleSheet(styles[2])
+        # MainWindow.setStyleSheet(styles[2])
         self.centerwidget = QWidget(MainWindow)
         self.centerwidget.setObjectName(u"centerwidget")
         self.verticalLayout = QVBoxLayout(self.centerwidget)

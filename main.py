@@ -349,7 +349,7 @@ class MainWindow(QMainWindow):
         default_client_type_index = 1
         default_region_index = 4
         autoredirect_index = 0
-        default_theme_index = 0
+        default_theme_index = 2
         try:
             with open('.state.json', 'r') as f:
                 state = json.load(f)
