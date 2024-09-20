@@ -20,7 +20,7 @@ class Ui_MainWindow(object):
         MainWindow.resize(250, 250)
         MainWindow.setMaximumSize(QSize(275, 325))
         MainWindow.setWindowOpacity(0.9)
-        MainWindow.setStyleSheet(styles)
+        MainWindow.setStyleSheet(styles[2])
         self.centerwidget = QWidget(MainWindow)
         self.centerwidget.setObjectName(u"centerwidget")
         self.verticalLayout = QVBoxLayout(self.centerwidget)
@@ -147,6 +147,41 @@ class Ui_MainWindow(object):
         self.horizontalLayout_3.addWidget(self.maxSuggestionComboBox)
 
         self.verticalLayout_3.addWidget(self.maxSuggestionFrame)
+
+
+
+        self.themeFrame = QFrame(self.scrollAreaWidgetContents)
+        self.themeFrame.setObjectName(u"themeFrame")
+        self.themeFrame.setMinimumSize(QSize(0, 28))
+        self.themeFrame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.themeFrame.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_4 = QHBoxLayout(self.themeFrame)
+        self.horizontalLayout_4.setSpacing(12)
+        self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
+        self.horizontalLayout_4.setContentsMargins(12, 0, 12, 0)
+        self.themeBtn = QPushButton(self.themeFrame)
+        self.themeBtn.setObjectName(u"themeBtn")
+
+        self.horizontalLayout_4.addWidget(
+            self.themeBtn, 0, Qt.AlignmentFlag.AlignLeft)
+
+        self.themeComboBox = QComboBox(self.themeFrame)
+        self.themeComboBox.setObjectName(u"themeComboBox")
+        self.themeComboBox.setMaximumSize(QSize(84, 24))
+        self.themeComboBox.addItems([
+            'Default',
+            'Retro',
+            'Dark Blue',
+            'White Light',
+            'Black'
+        ])
+        self.themeComboBox.setCurrentIndex(0)
+
+        self.horizontalLayout_4.addWidget(self.themeComboBox)
+
+        self.verticalLayout_3.addWidget(self.themeFrame)
+
+
 
         self.languageFrame = QFrame(self.scrollAreaWidgetContents)
         self.languageFrame.setObjectName(u"languageFrame")
@@ -341,6 +376,8 @@ class Ui_MainWindow(object):
 
         self.languageBtn.setText(QCoreApplication.translate(
             "MainWindow", u"Language", None))
+        self.themeBtn.setText(QCoreApplication.translate(
+            "MainWindow", u"Theme", None))
         self.clientTypeBtn.setText(QCoreApplication.translate(
             "MainWindow", u"Client Type", None))
         self.regionBtn.setText(QCoreApplication.translate(

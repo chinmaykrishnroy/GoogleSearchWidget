@@ -60,6 +60,8 @@ class MainWindow(QMainWindow):
             self.enable_voicesearch_redirects)
         self.settings_ui.opacityComboBox.currentIndexChanged.connect(
             self.parse_opacity)
+        self.settings_ui.themeComboBox.currentIndexChanged.connect(
+            self.change_theme)
         self.settings_ui.maxSuggestionComboBox.currentIndexChanged.connect(
             self.set_max_suggestions)
         self.settings_ui.languageComboBox.currentIndexChanged.connect(
@@ -73,6 +75,10 @@ class MainWindow(QMainWindow):
 
     def enable_voicesearch_redirects(self):
         self.autoredirect = True if not self.settings_ui.autoVoiceSearchBomboBox.currentIndex() else False
+        self.saveState()
+
+    def change_theme(self):
+        self.setStyleSheet(styles[self.settings_ui.themeComboBox.currentIndex()])
         self.saveState()
 
     def parse_opacity(self):
@@ -149,6 +155,7 @@ class MainWindow(QMainWindow):
 
     def onTextChanged(self):
         self.debounce_timer.start(40)
+        # self.clear_suggestions()
         self.clear_focus()
 
     def fetchSuggestions(self):
@@ -330,7 +337,7 @@ class MainWindow(QMainWindow):
             'client_type': self.settings_ui.clientTypeComboBox.currentIndex(),
             'region': self.settings_ui.regionComboBox.currentIndex(),
             'autoredirect': self.settings_ui.autoVoiceSearchBomboBox.currentIndex(),
-            'theme': 0,
+            'theme': self.settings_ui.themeComboBox.currentIndex(),
         }
         with open('.state.json', 'w') as f:
             json.dump(state, f)
@@ -368,6 +375,7 @@ class MainWindow(QMainWindow):
             self.autoredirect_index = autoredirect_index
             self.default_theme_index = default_theme_index
 
+
         self.settings_ui.maxSuggestionComboBox.setCurrentIndex(
             self.max_suggestion_index)
         self.settings_ui.opacityComboBox.setCurrentIndex(
@@ -378,6 +386,10 @@ class MainWindow(QMainWindow):
         self.settings_ui.regionComboBox.setCurrentIndex(self.region_index)
         self.settings_ui.autoVoiceSearchBomboBox.setCurrentIndex(
             self.autoredirect_index)
+        self.settings_ui.themeComboBox.setCurrentIndex(
+            self.default_theme_index)
+        
+        self.change_theme()
         self.enable_voicesearch_redirects()
         self.parse_opacity()
         self.set_max_suggestions()

@@ -1,1 +1,1 @@
-auto
+update_suggestions

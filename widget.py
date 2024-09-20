@@ -25,7 +25,7 @@ class Ui_MainWindow(object):
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(415, 108)
         MainWindow.setWindowOpacity(0.6)
-        MainWindow.setStyleSheet(styles)
+        MainWindow.setStyleSheet(styles[2])
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setMinimumSize(QSize(415, 0))
