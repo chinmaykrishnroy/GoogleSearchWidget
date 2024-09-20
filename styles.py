@@ -146,12 +146,12 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #scrollAreaWidgetContents QFrame {
-	background-color: #3A606E;
+	background-color: #ff0000;
 	border-radius: 4px;
 }
 
 #scrollAreaWidgetContents QPushButton {
-	background-color: #3A606E;
+	background-color: #ff0000;
 	color: #ffffff;
 	padding: 2px 4px;
 }
@@ -217,7 +217,7 @@ QScrollBar::add-line, QScrollBar::sub-line {
 	border-radius: 6px; 
 }
 
-#mediaButtonsFrame QComboBox:pressed {
+#scrollAreaWidgetContents QComboBox:pressed {
 	border-style: solid; 
 	border-radius: 6px;
 }
@@ -387,12 +387,12 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #scrollAreaWidgetContents QFrame {
-	background-color: #3A606E;
+	background-color: #ff0000;
 	border-radius: 4px;
 }
 
 #scrollAreaWidgetContents QPushButton {
-	background-color: #3A606E;
+	background-color: #ff0000;
 	color: #ffffff;
 	padding: 2px 4px;
 }
@@ -458,7 +458,7 @@ QScrollBar::add-line, QScrollBar::sub-line {
 	border-radius: 6px; 
 }
 
-#mediaButtonsFrame QComboBox:pressed {
+#scrollAreaWidgetContents QComboBox:pressed {
 	border-style: solid; 
 	border-radius: 6px;
 }
@@ -628,12 +628,12 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #scrollAreaWidgetContents QFrame {
-	background-color: #3A606E;
+	background-color: #ff0000;
 	border-radius: 4px;
 }
 
 #scrollAreaWidgetContents QPushButton {
-	background-color: #3A606E;
+	background-color: #ff0000;
 	color: #ffffff;
 	padding: 2px 4px;
 }
@@ -699,7 +699,7 @@ QScrollBar::add-line, QScrollBar::sub-line {
 	border-radius: 6px; 
 }
 
-#mediaButtonsFrame QComboBox:pressed {
+#scrollAreaWidgetContents QComboBox:pressed {
 	border-style: solid; 
 	border-radius: 6px;
 }
@@ -869,12 +869,12 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #scrollAreaWidgetContents QFrame {
-	background-color: #3A606E;
+	background-color: #ff0000;
 	border-radius: 4px;
 }
 
 #scrollAreaWidgetContents QPushButton {
-	background-color: #3A606E;
+	background-color: #ff0000;
 	color: #ffffff;
 	padding: 2px 4px;
 }
@@ -940,7 +940,7 @@ QScrollBar::add-line, QScrollBar::sub-line {
 	border-radius: 6px; 
 }
 
-#mediaButtonsFrame QComboBox:pressed {
+#scrollAreaWidgetContents QComboBox:pressed {
 	border-style: solid; 
 	border-radius: 6px;
 }
@@ -1111,12 +1111,12 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #scrollAreaWidgetContents QFrame {
-	background-color: #3A606E;
+	background-color: #ff0000;
 	border-radius: 4px;
 }
 
 #scrollAreaWidgetContents QPushButton {
-	background-color: #3A606E;
+	background-color: #ff0000;
 	color: #ffffff;
 	padding: 2px 4px;
 }
@@ -1182,7 +1182,7 @@ QScrollBar::add-line, QScrollBar::sub-line {
 	border-radius: 6px; 
 }
 
-#mediaButtonsFrame QComboBox:pressed {
+#scrollAreaWidgetContents QComboBox:pressed {
 	border-style: solid; 
 	border-radius: 6px;
 }
