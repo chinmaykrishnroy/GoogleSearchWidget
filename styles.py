@@ -319,17 +319,17 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #searchBtn {
-	background-color: #DD290F;
+	background-color: #48260D;
 	border-top-right-radius: 14px;
     border-bottom-right-radius: 14px;
 }
 
 #searchBtn:hover {
-	background-color: #CC0000;
+	background-color: #68462D;
 }
 
 #searchBtn:pressed {
-	background-color: #444444;
+	background-color: #381600;
 	border-right: 1px solid #779300;
 	border-top: 1px solid #779300;
 	border-bottom: 1px solid #779300;
