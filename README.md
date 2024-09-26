@@ -39,6 +39,8 @@ This widget is perfect for users who want a lightweight, always-on-bottom search
 
 ## Installation
 
+#### Windows
+
 1. Clone the repository:
 
    ```bash
