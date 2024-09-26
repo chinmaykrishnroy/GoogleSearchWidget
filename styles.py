@@ -801,17 +801,17 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #searchBtn {
-	background-color: #C6AEBE;
+	background-color: #978090;
 	border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
 }
 
 #searchBtn:hover {
-	background-color: #978090;
+	background-color: #776070;
 }
 
 #searchBtn:pressed {
-	background-color: #888888;
+	background-color: #464250;
 	border-right: 1px solid #888888;
 	border-top: 1px solid #888888;
 	border-bottom: 1px solid #888888;
