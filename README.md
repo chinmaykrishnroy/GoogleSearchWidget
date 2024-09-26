@@ -55,7 +55,7 @@ This widget is perfect for users who want a lightweight, always-on-bottom search
    ```bash
    createshortcut.bat
 
-4. Use the shortcut file 'GoogleSearch' to open the widget for the next time.
+4. <b> Use the shortcut file 'GoogleSearch' to open the widget for the next time </b>.
 5. For adding the widget to start during Windows start-up, follow: <br> <b>
    <i> Press </i> Win+R  <br>
    <i> Type </i> 'shell:startup'  <br>
