@@ -36,6 +36,7 @@ This widget is perfect for users who want a lightweight, always-on-bottom search
 - **Resizable & Draggable**: Easily move or resize the widget on your screen.
 - **Lightweight & Frameless Design**: Offers a clean, minimalistic UI with no window borders.
 - **Persistent Settings**: Saves user preferences (e.g., opacity, suggestions limit) for future sessions.
+- **Multiple Themes**: Choose the theme you like from the available 5 different themes or create a new one.
 
 ## Installation
 
