@@ -39,7 +39,7 @@ This widget is perfect for users who want a lightweight, always-on-bottom search
 - **Multiple Themes**: Choose the theme you like from the available 5 different themes or create a new one.
 
 ## Installation
-
+### Make sure that Python is installed in your system and added to the path.
 #### Windows
 
 1. Clone the repository:
