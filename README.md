@@ -45,10 +45,22 @@ This widget is perfect for users who want a lightweight, always-on-bottom search
    git clone https://github.com/chinmaykrishnroy/GoogleSearchWidget.git
    cd GoogleSearchWidget
 
-2. Run the script:
+2. Run the run.bat script for the first time:
 
    ```bash
    run.bat
+
+3. Run the createshortcut.bat to generate a shortcut for the widget:
+
+   ```bash
+   createshortcut.bat
+
+4. Use the shortcut file 'GoogleSearch' to open the widget for the next time.
+5. For adding the widget to start during Windows start-up, follow:
+   ```bash
+   Press Win+R
+   Type shell:startup
+   Paste the shortcut created in the GoogleSearchWidget folder by running createshort.bat to this startup folder
 
 ## Customization
 
