@@ -76,7 +76,6 @@ This widget is perfect for users who want a lightweight, always-on-bottom search
    ```bash
    chmod +x run.sh
 
-
 ## Customization
 
 The widget offers several customization options to improve user experience and adapt to individual preferences:
