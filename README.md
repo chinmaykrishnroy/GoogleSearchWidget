@@ -63,6 +63,20 @@ This widget is perfect for users who want a lightweight, always-on-bottom search
    <i> Type </i> 'shell:startup'  <br>
    <i> Paste </i> the shortcut created in the GoogleSearchWidget folder by running 'createshort.bat' to this startup folder </b>
 
+#### Linux (Not Tested)
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/chinmaykrishnroy/GoogleSearchWidget.git
+   cd GoogleSearchWidget
+   
+2. Run the run.sh script:
+
+   ```bash
+   chmod +x run.sh
+
+
 ## Customization
 
 The widget offers several customization options to improve user experience and adapt to individual preferences:
