@@ -57,9 +57,9 @@ This widget is perfect for users who want a lightweight, always-on-bottom search
 
 4. Use the shortcut file 'GoogleSearch' to open the widget for the next time.
 5. For adding the widget to start during Windows start-up, follow: <br> <b>
-   Press Win+R  <br>
-   Type shell:startup  <br>
-   Paste the shortcut created in the GoogleSearchWidget folder by running createshort.bat to this startup folder <\b>
+   <i> Press <\i> Win+R  <br>
+   <i> Type <\i> 'shell:startup'  <br>
+   <i> Paste <\i> the shortcut created in the GoogleSearchWidget folder by running 'createshort.bat' to this startup folder <\b>
 
 ## Customization
 
