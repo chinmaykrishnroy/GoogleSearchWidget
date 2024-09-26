@@ -31,6 +31,7 @@ This widget is perfect for users who want a lightweight, always-on-bottom search
 - **Customizable Settings**:
   - Adjust the number of search suggestions (default is 5).
   - Change the opacity for a semi-transparent look.
+  - Use different themes according to your preference.
   - Set Google search parameters like language (`hl`), region (`gl`), and client type.
 - **Always-On-Bottom**: The widget stays on the bottom of all windows, ensuring no interference to the full-screen app.
 - **Resizable & Draggable**: Easily move or resize the widget on your screen.
