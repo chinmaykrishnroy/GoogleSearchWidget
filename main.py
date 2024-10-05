@@ -5,6 +5,8 @@ from setting import Ui_MainWindow as Ui_SettingsWindow
 import webbrowser
 import sys
 import json
+import socket
+import re
 
 
 class MainWindow(QMainWindow):
@@ -208,6 +210,21 @@ class MainWindow(QMainWindow):
         self.suggestion_buttons.append(button)
 
     def perform_search(self, query):
+        query = query.strip().lower()
+        url_pattern = re.compile(r'^(https?:\/\/)?(www\.)?([a-z0-9-]+\.[a-z]{2,})(\/.*)?$', re.IGNORECASE)
+        if url_pattern.match(query):
+            if not query.startswith(('http://', 'https://')):
+                query = 'https://' + query
+            webbrowser.open(query)
+            return
+        if ' ' not in query:
+            try:
+                domain = f"{query}.com"
+                socket.gethostbyname(domain)
+                webbrowser.open(f"https://{domain}")
+                return
+            except (socket.gaierror, socket.timeout):
+                pass
         url = f"https://www.google.com/search?q={query.replace(' ', '+')}"
         webbrowser.open(url)
 
