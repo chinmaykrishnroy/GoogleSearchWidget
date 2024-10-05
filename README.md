@@ -31,13 +31,17 @@ This widget is perfect for users who want a lightweight, always-on-bottom search
 - **Customizable Settings**:
   - Adjust the number of search suggestions (default is 5).
   - Change the opacity for a semi-transparent look.
+  - Use different themes according to your preference.
   - Set Google search parameters like language (`hl`), region (`gl`), and client type.
 - **Always-On-Bottom**: The widget stays on the bottom of all windows, ensuring no interference to the full-screen app.
 - **Resizable & Draggable**: Easily move or resize the widget on your screen.
 - **Lightweight & Frameless Design**: Offers a clean, minimalistic UI with no window borders.
 - **Persistent Settings**: Saves user preferences (e.g., opacity, suggestions limit) for future sessions.
+- **Multiple Themes**: Choose the theme you like from the available 5 different themes or create a new one.
 
 ## Installation
+### Make sure that Python is installed in your system and added to the path.
+#### Windows
 
 1. Clone the repository:
 
@@ -45,10 +49,34 @@ This widget is perfect for users who want a lightweight, always-on-bottom search
    git clone https://github.com/chinmaykrishnroy/GoogleSearchWidget.git
    cd GoogleSearchWidget
 
-2. Run the script:
+2. Run the run.bat script for the first time:
 
    ```bash
    run.bat
+
+3. Run the createshortcut.bat to generate a shortcut for the widget:
+
+   ```bash
+   createshortcut.bat
+
+4. <b> Use the shortcut file 'GoogleSearch' to open the widget for the next time </b>.
+5. For adding the widget to start during Windows start-up, follow: <br> <b>
+   <i> Press </i> Win+R  <br>
+   <i> Type </i> 'shell:startup'  <br>
+   <i> Paste </i> the shortcut created in the GoogleSearchWidget folder by running 'createshort.bat' to this startup folder </b>
+
+#### Linux (Not Tested)
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/chinmaykrishnroy/GoogleSearchWidget.git
+   cd GoogleSearchWidget
+   
+2. Run the run.sh script:
+
+   ```bash
+   chmod +x run.sh
 
 ## Customization
 
