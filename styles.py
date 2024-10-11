@@ -25,7 +25,8 @@ styles1 = """
 }
 
 QWidget {
-	background: #111111;
+	background: #140404
+;
 }
 
 
@@ -52,7 +53,7 @@ QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
 }
 
 QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {
-    background: #a7b308;
+    background: #cb8ef5;
     border-radius: 2px;
 }
 
@@ -108,7 +109,8 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #centralwidget QPushButton:hover {
-	background: #111111;
+	background: #140404
+;
 }
 
 #centralwidget QPushButton:focus {
@@ -146,19 +148,20 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #scrollAreaWidgetContents QFrame {
-	background-color: #ff0000;
+	background-color: #4f0530;
 	border-radius: 4px;
 }
 
 #scrollAreaWidgetContents QPushButton {
-	background-color: #ff0000;
+	background-color: #4f0530;
 	color: #ffffff;
 	padding: 2px 4px;
 }
 
 #scrollAreaWidgetContents QLineEdit {
 	background-color: #eeeeee;
-	color: #111111;
+	color: #140404
+;
 	padding: 2px 4px;
 	border-radius: 4px;
 }
@@ -172,7 +175,8 @@ QScrollBar::add-line, QScrollBar::sub-line {
 
 #headerWidget QToolButton {
 	border-radius: 12px;
-	border: 1px solid #111111;
+	border: 1px solid #140404
+;
 }
 
 #headerWidget QToolButton:hover {
@@ -189,17 +193,19 @@ QScrollBar::add-line, QScrollBar::sub-line {
 
 #headerWidget {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404;
 }
 
 #settingWidgets {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404
+;
 }
 
 #scrollAreaWidgetContents {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404
+;
 }
 
 #scrollAreaWidgetContents QComboBox {
@@ -246,7 +252,7 @@ styles2 = """
     margin: 0px;
     background-color: none;
 	font-family: 'Times New Roman', serif;
-    font-size: 17px;
+    font-size: 19px;
 }
 
 #centralwidget {
@@ -266,7 +272,8 @@ styles2 = """
 }
 
 QWidget {
-	background: #111111;
+	background: #140404
+;
 }
 
 
@@ -293,7 +300,7 @@ QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
 }
 
 QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {
-    background: #a7b308;
+    background: #cb8ef5;
     border-radius: 2px;
 }
 
@@ -305,7 +312,8 @@ QScrollBar::add-line, QScrollBar::sub-line {
 #searchInputText {
 	background: #FFECD1;
 	border: 1px solid #FFCCB1;
-	color: #111111;
+	color: #140404
+;
 	padding: 0px 12px;
 	border-top-left-radius: 14px;
     border-bottom-left-radius: 14px;
@@ -339,7 +347,8 @@ QScrollBar::add-line, QScrollBar::sub-line {
 	text-align: left;
 	background: #FFECD1;
 	border: 1px solid #FF7D00;
-	color: #111111;
+	color: #140404
+;
 	padding: 0px 12px;
 	border-top-left-radius: 14px;
     border-bottom-left-radius: 14px;
@@ -387,19 +396,20 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #scrollAreaWidgetContents QFrame {
-	background-color: #ff0000;
+	background-color: #4f0530;
 	border-radius: 4px;
 }
 
 #scrollAreaWidgetContents QPushButton {
-	background-color: #ff0000;
+	background-color: #4f0530;
 	color: #ffffff;
 	padding: 2px 4px;
 }
 
 #scrollAreaWidgetContents QLineEdit {
 	background-color: #eeeeee;
-	color: #111111;
+	color: #140404
+;
 	padding: 2px 4px;
 	border-radius: 4px;
 }
@@ -413,7 +423,8 @@ QScrollBar::add-line, QScrollBar::sub-line {
 
 #headerWidget QToolButton {
 	border-radius: 12px;
-	border: 1px solid #111111;
+	border: 1px solid #140404
+;
 }
 
 #headerWidget QToolButton:hover {
@@ -430,17 +441,19 @@ QScrollBar::add-line, QScrollBar::sub-line {
 
 #headerWidget {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404;
 }
 
 #settingWidgets {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404
+;
 }
 
 #scrollAreaWidgetContents {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404
+;
 }
 
 #scrollAreaWidgetContents QComboBox {
@@ -507,7 +520,8 @@ styles3 = """
 }
 
 QWidget {
-	background: #111111;
+	background: #140404
+;
 }
 
 
@@ -534,7 +548,7 @@ QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
 }
 
 QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {
-    background: #a7b308;
+    background: #cb8ef5;
     border-radius: 2px;
 }
 
@@ -570,7 +584,8 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #searchBtn:pressed {
-	background-color: #111111;
+	background-color: #140404
+;
 	border-right: 1px solid #000000;
 	border-top: 1px solid #000000;
 	border-bottom: 1px solid #000000;
@@ -628,19 +643,20 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #scrollAreaWidgetContents QFrame {
-	background-color: #ff0000;
+	background-color: #4f0530;
 	border-radius: 4px;
 }
 
 #scrollAreaWidgetContents QPushButton {
-	background-color: #ff0000;
+	background-color: #4f0530;
 	color: #ffffff;
 	padding: 2px 4px;
 }
 
 #scrollAreaWidgetContents QLineEdit {
 	background-color: #eeeeee;
-	color: #111111;
+	color: #140404
+;
 	padding: 2px 4px;
 	border-radius: 4px;
 }
@@ -654,7 +670,8 @@ QScrollBar::add-line, QScrollBar::sub-line {
 
 #headerWidget QToolButton {
 	border-radius: 12px;
-	border: 1px solid #111111;
+	border: 1px solid #140404
+;
 }
 
 #headerWidget QToolButton:hover {
@@ -671,17 +688,19 @@ QScrollBar::add-line, QScrollBar::sub-line {
 
 #headerWidget {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404;
 }
 
 #settingWidgets {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404
+;
 }
 
 #scrollAreaWidgetContents {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404
+;
 }
 
 #scrollAreaWidgetContents QComboBox {
@@ -748,7 +767,8 @@ styles4 = """
 }
 
 QWidget {
-	background: #111111;
+	background: #140404
+;
 }
 
 
@@ -775,7 +795,7 @@ QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
 }
 
 QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {
-    background: #a7b308;
+    background: #cb8ef5;
     border-radius: 2px;
 }
 
@@ -821,7 +841,8 @@ QScrollBar::add-line, QScrollBar::sub-line {
 	text-align: left;
 	background: #D7C0D0;
 	border: 1px solid #D7C0D0;
-	color: #111111;
+	color: #140404
+;
 	padding: 0px 12px;
 	border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -869,19 +890,20 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #scrollAreaWidgetContents QFrame {
-	background-color: #ff0000;
+	background-color: #4f0530;
 	border-radius: 4px;
 }
 
 #scrollAreaWidgetContents QPushButton {
-	background-color: #ff0000;
+	background-color: #4f0530;
 	color: #ffffff;
 	padding: 2px 4px;
 }
 
 #scrollAreaWidgetContents QLineEdit {
 	background-color: #eeeeee;
-	color: #111111;
+	color: #140404
+;
 	padding: 2px 4px;
 	border-radius: 4px;
 }
@@ -895,7 +917,7 @@ QScrollBar::add-line, QScrollBar::sub-line {
 
 #headerWidget QToolButton {
 	border-radius: 12px;
-	border: 1px solid #111111;
+	border: 1px solid #140404;
 }
 
 #headerWidget QToolButton:hover {
@@ -912,17 +934,19 @@ QScrollBar::add-line, QScrollBar::sub-line {
 
 #headerWidget {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404;
 }
 
 #settingWidgets {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404
+;
 }
 
 #scrollAreaWidgetContents {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404
+;
 }
 
 #scrollAreaWidgetContents QComboBox {
@@ -989,7 +1013,8 @@ styles5 = """
 }
 
 QWidget {
-	background: #111111;
+	background: #140404
+;
 }
 
 
@@ -1016,7 +1041,7 @@ QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
 }
 
 QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {
-    background: #a7b308;
+    background: #cb8ef5;
     border-radius: 2px;
 }
 
@@ -1111,19 +1136,20 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #scrollAreaWidgetContents QFrame {
-	background-color: #ff0000;
+	background-color: #4f0530;
 	border-radius: 4px;
 }
 
 #scrollAreaWidgetContents QPushButton {
-	background-color: #ff0000;
+	background-color: #4f0530;
 	color: #ffffff;
 	padding: 2px 4px;
 }
 
 #scrollAreaWidgetContents QLineEdit {
 	background-color: #eeeeee;
-	color: #111111;
+	color: #140404
+;
 	padding: 2px 4px;
 	border-radius: 4px;
 }
@@ -1137,7 +1163,8 @@ QScrollBar::add-line, QScrollBar::sub-line {
 
 #headerWidget QToolButton {
 	border-radius: 12px;
-	border: 1px solid #111111;
+	border: 1px solid #140404
+;
 }
 
 #headerWidget QToolButton:hover {
@@ -1154,17 +1181,19 @@ QScrollBar::add-line, QScrollBar::sub-line {
 
 #headerWidget {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404;
 }
 
 #settingWidgets {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404
+;
 }
 
 #scrollAreaWidgetContents {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404
+;
 }
 
 #scrollAreaWidgetContents QComboBox {
@@ -1233,7 +1262,8 @@ styles6 = """
 }
 
 QWidget {
-	background: #111111;
+	background: #140404
+;
 }
 
 
@@ -1260,7 +1290,7 @@ QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
 }
 
 QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {
-    background: #a7b308;
+    background: #cb8ef5;
     border-radius: 2px;
 }
 
@@ -1355,19 +1385,20 @@ QScrollBar::add-line, QScrollBar::sub-line {
 }
 
 #scrollAreaWidgetContents QFrame {
-	background-color: #ff0000;
+	background-color: #4f0530;
 	border-radius: 4px;
 }
 
 #scrollAreaWidgetContents QPushButton {
-	background-color: #ff0000;
+	background-color: #4f0530;
 	color: #ffffff;
 	padding: 2px 4px;
 }
 
 #scrollAreaWidgetContents QLineEdit {
 	background-color: #eeeeee;
-	color: #111111;
+	color: #140404
+;
 	padding: 2px 4px;
 	border-radius: 4px;
 }
@@ -1381,7 +1412,8 @@ QScrollBar::add-line, QScrollBar::sub-line {
 
 #headerWidget QToolButton {
 	border-radius: 12px;
-	border: 1px solid #111111;
+	border: 1px solid #140404
+;
 }
 
 #headerWidget QToolButton:hover {
@@ -1398,17 +1430,19 @@ QScrollBar::add-line, QScrollBar::sub-line {
 
 #headerWidget {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404;
 }
 
 #settingWidgets {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404
+;
 }
 
 #scrollAreaWidgetContents {
 	border-radius: 6px;
-	background: #111111;
+	background: #140404
+;
 }
 
 #scrollAreaWidgetContents QComboBox {

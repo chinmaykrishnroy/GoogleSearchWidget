@@ -5,9 +5,23 @@ from setting import Ui_MainWindow as Ui_SettingsWindow
 import webbrowser
 import sys
 import json
-import socket
 import re
+import os
 
+def getBasePath():
+    if hasattr(sys, '_MEIPASS'): return sys._MEIPASS
+    else: return os.path.dirname(os.path.abspath(__file__))
+
+def load_website_mappings(file_path):
+    websites = []
+    try:
+        with open(file_path, 'r') as file:
+            for line in file:
+                if '=' in line:
+                    websites.append(line.strip().split('=', 1))
+    except FileNotFoundError:
+        print(f"Error: {file_path} not found.")
+    return sorted(websites)
 
 class MainWindow(QMainWindow):
     def __init__(self, parent=None):
@@ -47,6 +61,8 @@ class MainWindow(QMainWindow):
         self.suggestion_buttons = []
         self.current_thread = None
         self.focused_suggestion_index = -1
+
+        self.direct_domains = load_website_mappings("%s/websites.txt" % getBasePath())
 
         self.debounce_timer = QTimer(self)
         self.debounce_timer.setSingleShot(True)
@@ -210,21 +226,32 @@ class MainWindow(QMainWindow):
         self.suggestion_buttons.append(button)
 
     def perform_search(self, query):
+
+        def binary_search(websites, query):
+            low, high = 0, len(websites) - 1
+            query = query.lower()
+            while low <= high:
+                mid = (low + high) // 2
+                mid_key = websites[mid][0].lower()
+                if mid_key == query: return websites[mid][1]
+                elif mid_key < query: low = mid + 1
+                else: high = mid - 1
+            return None
+        
         query = query.strip().lower()
         url_pattern = re.compile(r'^(https?:\/\/)?(www\.)?([a-z0-9-]+\.[a-z]{2,})(\/.*)?$', re.IGNORECASE)
+
         if url_pattern.match(query):
             if not query.startswith(('http://', 'https://')):
                 query = 'https://' + query
             webbrowser.open(query)
             return
-        if ' ' not in query:
-            try:
-                domain = f"{query}.com"
-                socket.gethostbyname(domain)
-                webbrowser.open(f"https://{domain}")
-                return
-            except (socket.gaierror, socket.timeout):
-                pass
+
+        url = binary_search(self.direct_domains, query)
+        if url:
+            webbrowser.open(url)
+            return
+    
         url = f"https://www.google.com/search?q={query.replace(' ', '+')}"
         webbrowser.open(url)
 

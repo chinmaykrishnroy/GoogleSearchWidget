@@ -173,7 +173,8 @@ class Ui_MainWindow(object):
             'Retro',
             'Dark Blue',
             'White Light',
-            'Black'
+            'Black',
+            'Blue Bold'
         ])
         self.themeComboBox.setCurrentIndex(0)
 
