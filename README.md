@@ -1,6 +1,7 @@
 # Google Search Widget with Voice Search
 
 This project is a **Google Search Widget** built with **PySide6** that provides a streamlined, always-accessible user interface for performing Google searches. It supports voice search, customizable settings, and dynamic search suggestions. The widget integrates seamlessly with the default web browser to display search results and offers an aesthetically pleasing, modern interface.
+![Screenshot 2024-11-16 183133](https://github.com/user-attachments/assets/49a06809-aad4-458f-bc3d-84c8b2b91f47)
 
 ## Description
 
